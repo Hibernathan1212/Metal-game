@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D81B4B3D2BF7064900AB0146 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B3C2BF7064900AB0146 /* AppDelegate.m */; };
+		D81B4B402BF7064900AB0146 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B3F2BF7064900AB0146 /* Renderer.m */; };
+		D81B4B432BF7064900AB0146 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B422BF7064900AB0146 /* GameViewController.m */; };
+		D81B4B452BF7064900AB0146 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B442BF7064900AB0146 /* Shaders.metal */; };
+		D81B4B482BF7064D00AB0146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81B4B472BF7064D00AB0146 /* Assets.xcassets */; };
+		D81B4B4B2BF7064D00AB0146 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D81B4B4A2BF7064D00AB0146 /* Base */; };
+		D81B4B4D2BF7064D00AB0146 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B4C2BF7064D00AB0146 /* main.m */; };
+		D81B4B582BF7064D00AB0146 /* Metal_gameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B572BF7064D00AB0146 /* Metal_gameTests.m */; };
+		D81B4B622BF7064D00AB0146 /* Metal_gameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B612BF7064D00AB0146 /* Metal_gameUITests.m */; };
+		D81B4B642BF7064D00AB0146 /* Metal_gameUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4B632BF7064D00AB0146 /* Metal_gameUITestsLaunchTests.m */; };
+		D81B4C2F2BF84BD700AB0146 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D81B4C2E2BF84BD700AB0146 /* InputView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D81B4B542BF7064D00AB0146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D81B4B302BF7064900AB0146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81B4B372BF7064900AB0146;
+			remoteInfo = "Metal game";
+		};
+		D81B4B5E2BF7064D00AB0146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D81B4B302BF7064900AB0146 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81B4B372BF7064900AB0146;
+			remoteInfo = "Metal game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D81B4B382BF7064900AB0146 /* Metal game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metal game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81B4B3B2BF7064900AB0146 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D81B4B3C2BF7064900AB0146 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D81B4B3E2BF7064900AB0146 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		D81B4B3F2BF7064900AB0146 /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		D81B4B412BF7064900AB0146 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		D81B4B422BF7064900AB0146 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		D81B4B442BF7064900AB0146 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		D81B4B462BF7064900AB0146 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		D81B4B472BF7064D00AB0146 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D81B4B4A2BF7064D00AB0146 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D81B4B4C2BF7064D00AB0146 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D81B4B4E2BF7064D00AB0146 /* Metal_game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Metal_game.entitlements; sourceTree = "<group>"; };
+		D81B4B532BF7064D00AB0146 /* Metal gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metal gameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81B4B572BF7064D00AB0146 /* Metal_gameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Metal_gameTests.m; sourceTree = "<group>"; };
+		D81B4B5D2BF7064D00AB0146 /* Metal gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Metal gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81B4B612BF7064D00AB0146 /* Metal_gameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Metal_gameUITests.m; sourceTree = "<group>"; };
+		D81B4B632BF7064D00AB0146 /* Metal_gameUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Metal_gameUITestsLaunchTests.m; sourceTree = "<group>"; };
+		D81B4B742BF710D300AB0146 /* InputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		D81B4C2E2BF84BD700AB0146 /* InputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D81B4B352BF7064900AB0146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81B4B502BF7064D00AB0146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81B4B5A2BF7064D00AB0146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D81B4B2F2BF7064900AB0146 = {
+			isa = PBXGroup;
+			children = (
+				D81B4B3A2BF7064900AB0146 /* Metal game */,
+				D81B4B562BF7064D00AB0146 /* Metal gameTests */,
+				D81B4B602BF7064D00AB0146 /* Metal gameUITests */,
+				D81B4B392BF7064900AB0146 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D81B4B392BF7064900AB0146 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D81B4B382BF7064900AB0146 /* Metal game.app */,
+				D81B4B532BF7064D00AB0146 /* Metal gameTests.xctest */,
+				D81B4B5D2BF7064D00AB0146 /* Metal gameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D81B4B3A2BF7064900AB0146 /* Metal game */ = {
+			isa = PBXGroup;
+			children = (
+				D81B4B3B2BF7064900AB0146 /* AppDelegate.h */,
+				D81B4B3C2BF7064900AB0146 /* AppDelegate.m */,
+				D81B4B3E2BF7064900AB0146 /* Renderer.h */,
+				D81B4B3F2BF7064900AB0146 /* Renderer.m */,
+				D81B4B412BF7064900AB0146 /* GameViewController.h */,
+				D81B4B422BF7064900AB0146 /* GameViewController.m */,
+				D81B4B442BF7064900AB0146 /* Shaders.metal */,
+				D81B4B462BF7064900AB0146 /* ShaderTypes.h */,
+				D81B4B472BF7064D00AB0146 /* Assets.xcassets */,
+				D81B4B492BF7064D00AB0146 /* Main.storyboard */,
+				D81B4B4C2BF7064D00AB0146 /* main.m */,
+				D81B4B4E2BF7064D00AB0146 /* Metal_game.entitlements */,
+				D81B4B742BF710D300AB0146 /* InputView.h */,
+				D81B4C2E2BF84BD700AB0146 /* InputView.m */,
+			);
+			path = "Metal game";
+			sourceTree = "<group>";
+		};
+		D81B4B562BF7064D00AB0146 /* Metal gameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D81B4B572BF7064D00AB0146 /* Metal_gameTests.m */,
+			);
+			path = "Metal gameTests";
+			sourceTree = "<group>";
+		};
+		D81B4B602BF7064D00AB0146 /* Metal gameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D81B4B612BF7064D00AB0146 /* Metal_gameUITests.m */,
+				D81B4B632BF7064D00AB0146 /* Metal_gameUITestsLaunchTests.m */,
+			);
+			path = "Metal gameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D81B4B372BF7064900AB0146 /* Metal game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81B4B672BF7064D00AB0146 /* Build configuration list for PBXNativeTarget "Metal game" */;
+			buildPhases = (
+				D81B4B342BF7064900AB0146 /* Sources */,
+				D81B4B352BF7064900AB0146 /* Frameworks */,
+				D81B4B362BF7064900AB0146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Metal game";
+			productName = "Metal game";
+			productReference = D81B4B382BF7064900AB0146 /* Metal game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D81B4B522BF7064D00AB0146 /* Metal gameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81B4B6A2BF7064D00AB0146 /* Build configuration list for PBXNativeTarget "Metal gameTests" */;
+			buildPhases = (
+				D81B4B4F2BF7064D00AB0146 /* Sources */,
+				D81B4B502BF7064D00AB0146 /* Frameworks */,
+				D81B4B512BF7064D00AB0146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D81B4B552BF7064D00AB0146 /* PBXTargetDependency */,
+			);
+			name = "Metal gameTests";
+			productName = "Metal gameTests";
+			productReference = D81B4B532BF7064D00AB0146 /* Metal gameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D81B4B5C2BF7064D00AB0146 /* Metal gameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81B4B6D2BF7064D00AB0146 /* Build configuration list for PBXNativeTarget "Metal gameUITests" */;
+			buildPhases = (
+				D81B4B592BF7064D00AB0146 /* Sources */,
+				D81B4B5A2BF7064D00AB0146 /* Frameworks */,
+				D81B4B5B2BF7064D00AB0146 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D81B4B5F2BF7064D00AB0146 /* PBXTargetDependency */,
+			);
+			name = "Metal gameUITests";
+			productName = "Metal gameUITests";
+			productReference = D81B4B5D2BF7064D00AB0146 /* Metal gameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D81B4B302BF7064900AB0146 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D81B4B372BF7064900AB0146 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D81B4B522BF7064D00AB0146 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D81B4B372BF7064900AB0146;
+					};
+					D81B4B5C2BF7064D00AB0146 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D81B4B372BF7064900AB0146;
+					};
+				};
+			};
+			buildConfigurationList = D81B4B332BF7064900AB0146 /* Build configuration list for PBXProject "Metal game" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D81B4B2F2BF7064900AB0146;
+			productRefGroup = D81B4B392BF7064900AB0146 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D81B4B372BF7064900AB0146 /* Metal game */,
+				D81B4B522BF7064D00AB0146 /* Metal gameTests */,
+				D81B4B5C2BF7064D00AB0146 /* Metal gameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D81B4B362BF7064900AB0146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81B4B482BF7064D00AB0146 /* Assets.xcassets in Resources */,
+				D81B4B4B2BF7064D00AB0146 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81B4B512BF7064D00AB0146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81B4B5B2BF7064D00AB0146 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D81B4B342BF7064900AB0146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81B4B4D2BF7064D00AB0146 /* main.m in Sources */,
+				D81B4C2F2BF84BD700AB0146 /* InputView.m in Sources */,
+				D81B4B452BF7064900AB0146 /* Shaders.metal in Sources */,
+				D81B4B402BF7064900AB0146 /* Renderer.m in Sources */,
+				D81B4B432BF7064900AB0146 /* GameViewController.m in Sources */,
+				D81B4B3D2BF7064900AB0146 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81B4B4F2BF7064D00AB0146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81B4B582BF7064D00AB0146 /* Metal_gameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81B4B592BF7064D00AB0146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81B4B642BF7064D00AB0146 /* Metal_gameUITestsLaunchTests.m in Sources */,
+				D81B4B622BF7064D00AB0146 /* Metal_gameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D81B4B552BF7064D00AB0146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D81B4B372BF7064900AB0146 /* Metal game */;
+			targetProxy = D81B4B542BF7064D00AB0146 /* PBXContainerItemProxy */;
+		};
+		D81B4B5F2BF7064D00AB0146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D81B4B372BF7064900AB0146 /* Metal game */;
+			targetProxy = D81B4B5E2BF7064D00AB0146 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D81B4B492BF7064D00AB0146 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D81B4B4A2BF7064D00AB0146 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D81B4B652BF7064D00AB0146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D81B4B662BF7064D00AB0146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D81B4B682BF7064D00AB0146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Metal game/Metal_game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nathan.Metal-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		D81B4B692BF7064D00AB0146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Metal game/Metal_game.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nathan.Metal-game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		D81B4B6B2BF7064D00AB0146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nathan.Metal-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metal game.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metal game";
+			};
+			name = Debug;
+		};
+		D81B4B6C2BF7064D00AB0146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nathan.Metal-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Metal game.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Metal game";
+			};
+			name = Release;
+		};
+		D81B4B6E2BF7064D00AB0146 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nathan.Metal-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = "Metal game";
+			};
+			name = Debug;
+		};
+		D81B4B6F2BF7064D00AB0146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nathan.Metal-gameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = "Metal game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D81B4B332BF7064900AB0146 /* Build configuration list for PBXProject "Metal game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81B4B652BF7064D00AB0146 /* Debug */,
+				D81B4B662BF7064D00AB0146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D81B4B672BF7064D00AB0146 /* Build configuration list for PBXNativeTarget "Metal game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81B4B682BF7064D00AB0146 /* Debug */,
+				D81B4B692BF7064D00AB0146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D81B4B6A2BF7064D00AB0146 /* Build configuration list for PBXNativeTarget "Metal gameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81B4B6B2BF7064D00AB0146 /* Debug */,
+				D81B4B6C2BF7064D00AB0146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D81B4B6D2BF7064D00AB0146 /* Build configuration list for PBXNativeTarget "Metal gameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81B4B6E2BF7064D00AB0146 /* Debug */,
+				D81B4B6F2BF7064D00AB0146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D81B4B302BF7064900AB0146 /* Project object */;
+}
